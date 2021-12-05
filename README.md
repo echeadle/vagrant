@@ -8,3 +8,6 @@ git push -u origin master
 
 Alternate box download site:
 https://www.vagrantbox.es/
+
+Hashicorp Vagrant plugins:
+https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins
