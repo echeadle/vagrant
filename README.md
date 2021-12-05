@@ -11,3 +11,5 @@ https://www.vagrantbox.es/
 
 Hashicorp Vagrant plugins:
 https://github.com/hashicorp/vagrant/wiki/Available-Vagrant-Plugins
+
+Checking if change of name to main worked.
