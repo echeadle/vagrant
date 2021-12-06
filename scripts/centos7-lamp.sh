@@ -20,7 +20,7 @@ ln -s /vagrant /var/www/html
 systemctl start httpd
 
 # PHP
-yum install -y php-cli php-common php-devel php-mysql
+yum install -y php php-cli php-common php-devel php-mysql
 
 # MySQL
 yum install -y mysql mysql-devel mariadb-server
