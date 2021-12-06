@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# MySQL  
-yum install -y mysql mysql-server  mysql-devel
-chkconfig --add  mysqld
-chkconfig mysqld on
+# MySQL
+yum install -y mysql mysql-devel mariadb-server
+systemctl enable mariadb
+systemctl start mariadb
 
-service mysqld start
 
 mysql -u root -e "SHOW DATABASES";
-
-
 
