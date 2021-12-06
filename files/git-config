@@ -1,6 +1,6 @@
 [user]
 	name = echeadle
-	email = edward.cheadle@cambiahealth.com
+	email = echeadle@gmail.com
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
