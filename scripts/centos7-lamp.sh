@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Update CentOS, except kernel, with any patches
+yum install -y deltarpm
 yum update -y --exclude=kernel
 
 # Tools
@@ -27,7 +28,7 @@ systemctl enable mariadb
 systemctl start mariadb
 
 
-mysql -u root -d "SHOW DATABASES";
+mysql -u root -e "SHOW DATABASES";
 
 # Download Starter content
 cd /vagrant
