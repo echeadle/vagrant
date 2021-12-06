@@ -1,0 +1,18 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "geerlingguy/centos7"
+
+  config.vm.network "forwarded_port", guest: 80, host: 8080
+
+  config.vbguest.auto_update = false
+
+  config.vm.provision "file",
+    source: "~/Courses/DEVOPS/u-vagrant/vagrant/files/git-config",
+    destination: "~/.gitconfig"
+
+  config.vm.provision "shell",
+    path: "https://raw.githubusercontent.com/echeadle/vagrant/main/scripts/centos7-lamp.sh"
+
+end
