@@ -22,4 +22,3 @@ sudo -u vagrant wget -q https://raw.githubusercontent.com/echeadle/vagrant/maste
 sudo -u vagrant wget -q https://raw.githubusercontent.com/echeadle/vagrant/master/files/info.php
 
 systemctl restart httpd
-~
